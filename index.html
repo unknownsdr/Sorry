@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message for Pihu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    .emoji-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.08;
+      background-image: url('https://em-content.zobj.net/thumbs/240/apple/354/sparkling-heart_1f496.png'),
+                        url('https://em-content.zobj.net/thumbs/240/apple/354/pleading-face_1f97a.png'),
+                        url('https://em-content.zobj.net/thumbs/240/apple/354/folded-hands_1f64f.png');
+      background-size: 150px, 150px, 150px;
+      background-repeat: repeat;
+      background-position: center;
+      animation: floatEmojis 40s linear infinite;
+    }
+
+    @keyframes floatEmojis {
+      0% { background-position: 0 0, 50px 50px, 100px 100px; }
+      100% { background-position: 1000px 1000px, 1050px 1050px, 1100px 1100px; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .message-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #444;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #777;
+    }
+
+    .footer a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji-bg"></div>
+  <div class="container">
+    <div class="message-box">
+      <h1>If you’ve blocked me, I kindly ask you to please consider unblocking me.</h1>
+      <p>I understand if you don’t wish to talk or continue our conversation—but I sincerely request you not to block me. Thank you.</p>
+      <div class="footer">
+        With all due respect,<br>
+        To: <a href="https://www.instagram.com/pihutripathi03" target="_blank">@pihutripathi03</a>
+      </div>
+    </div>
+  </div>
+</body>
+  </html>
