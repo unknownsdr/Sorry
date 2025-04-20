@@ -23,7 +23,7 @@
       background-image: url('https://em-content.zobj.net/thumbs/240/apple/354/sparkling-heart_1f496.png'),
                         url('https://em-content.zobj.net/thumbs/240/apple/354/pleading-face_1f97a.png'),
                         url('https://em-content.zobj.net/thumbs/240/apple/354/folded-hands_1f64f.png');
-      background-size: 150px, 150px, 150px;
+      background-size: 100px, 100px, 100px;
       background-repeat: repeat;
       background-position: center;
       animation: floatEmojis 40s linear infinite;
@@ -42,38 +42,39 @@
       align-items: center;
       text-align: center;
       height: 100vh;
-      padding: 20px;
+      padding: 10px;
     }
 
     .message-box {
       background: rgba(255, 255, 255, 0.92);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      max-width: 700px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
       width: 100%;
     }
 
     .top-image {
       display: block;
-      margin: 0 auto 20px;
-      width: 180px;
+      margin: 0 auto 15px;
+      width: 130px;
       height: auto;
-      border-radius: 20px;
-      border: 4px solid;
+      border-radius: 15px;
+      border: 3px solid;
       border-image: linear-gradient(45deg, orange, lightblue) 1;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 20px;
       color: red;
       font-weight: 600;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 14px;
       color: red;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     p strong {
@@ -81,9 +82,25 @@
       font-weight: bold;
     }
 
+    .extra-message {
+      margin-top: 18px;
+      padding: 12px;
+      border: 1.5px solid #000;
+      color: #000;
+      font-size: 13.5px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .extra-message a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
     .footer {
-      margin-top: 30px;
-      font-size: 16px;
+      margin-top: 20px;
+      font-size: 13px;
       color: #777;
     }
 
@@ -101,12 +118,14 @@
       display: inline-block;
       background-color: #0077cc;
       color: white;
-      padding: 12px 20px;
-      font-size: 16px;
-      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 6px;
       text-decoration: none;
-      margin-top: 20px;
+      margin-top: 16px;
       font-weight: bold;
+      border: none;
+      cursor: pointer;
     }
 
     .unblock-btn:hover {
@@ -119,9 +138,18 @@
   <div class="container">
     <div class="message-box">
       <img src="https://envs.sh/YJw.jpg" alt="Top Image" class="top-image" />
-      <h1>If you’ve blocked me, I kindly ask you to please consider <strong>unblocking</strong> me.</h1>
-      <p>I understand if you don’t wish to talk or continue our conversation—but I sincerely request you not to <strong>block</strong> me. Thank you.</p>
+      <h1>If you’ve blocked me, please consider <strong>unblocking</strong> me.</h1>
+      <p>I understand if you don’t wish to talk or continue our conversation—but I kindly request you not to <strong>block</strong> me. Thank you.</p>
+
+      <!-- Thank-you message in black with border -->
+      <div class="extra-message">
+        Thank you, <a href="https://www.instagram.com/pihu12344980" target="_blank">@pihu12344980</a>, for the follow.<br>
+        It means a lot that you understand my feelings.<br>
+        Hoping one day <a href="https://www.instagram.com/pihutripathi03" target="_blank">@pihutripathi03</a> unblocks me too.
+      </div>
+
       <a href="https://www.instagram.com/as.0pa" class="unblock-btn" target="_blank">Unblock Me</a>
+
       <div class="footer">
         With all due respect,<br>
         To: <a href="https://www.instagram.com/pihutripathi03" target="_blank">@pihutripathi03</a>
